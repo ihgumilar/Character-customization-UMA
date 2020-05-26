@@ -1676,6 +1676,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
+      propertyPath: CharacterCreated.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
+      propertyPath: CharacterUpdated.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
       propertyPath: context
       value: 
       objectReference: {fileID: 1245268735}
@@ -1742,6 +1750,22 @@ PrefabInstance:
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._compatibleRaces.Array.data[1]
       value: HumanMaleDCS
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
+      propertyPath: CharacterCreated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
+      propertyPath: CharacterCreated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
+      propertyPath: CharacterUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
+      propertyPath: CharacterUpdated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 3}
@@ -3497,6 +3521,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494788035}
   m_CullTransparentMesh: 0
+--- !u!1 &1500548231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 153068, guid: 5c80fc4442f8349969abea6c1a0f1faa,
+    type: 3}
+  m_PrefabInstance: {fileID: 619835196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1500548235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500548231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5da20285323a97b49a9aeecff8d94c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1500548236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500548231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee6213bbb4091645a10652c183468c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1572513446
 GameObject:
   m_ObjectHideFlags: 0
