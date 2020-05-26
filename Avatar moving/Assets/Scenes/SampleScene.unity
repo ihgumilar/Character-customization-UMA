@@ -3551,6 +3551,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee6213bbb4091645a10652c183468c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heightSlider: {fileID: 890079954}
+  muscleSlider: {fileID: 1688009115}
+  weightSlider: {fileID: 268418444}
 --- !u!1 &1572513446
 GameObject:
   m_ObjectHideFlags: 0
