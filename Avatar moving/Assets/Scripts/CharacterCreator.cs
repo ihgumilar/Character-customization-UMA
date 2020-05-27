@@ -14,6 +14,12 @@ public class CharacterCreator : MonoBehaviour
     [SerializeField]
     private Slider heightSlider, muscleSlider, weightSlider;
 
+    [SerializeField]
+    private UMAWardrobeRecipe[] maleHair, femaleHair;
+
+    [SerializeField]
+    private Color[] skinColors;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +39,37 @@ public class CharacterCreator : MonoBehaviour
         // Connect weight slider with DNA attribute to change
         weightSlider.onValueChanged.AddListener(OnWeightChange);
 
+    }
+
+    private void OnDisable()
+    {
+        {
+            // if it is not used, then we disable all listeners. To prevent memory leak issues
+            characterAvatar.CharacterUpdated.RemoveListener(OnCharacterUpdated);
+            characterAvatar.CharacterCreated.RemoveListener(OnCharacterCreated);
+            heightSlider.onValueChanged.RemoveListener(OnHeightChange);
+            weightSlider.onValueChanged.RemoveListener(OnWeightChange);
+            muscleSlider.onValueChanged.RemoveListener(OnMuscleChange);
+        }
+    }
+
+    public void ChangeHair(int hair)
+    {
+        if(characterAvatar.activeRace.name == "HumanMaleDCS")
+        {
+            characterAvatar.SetSlot(maleHair[hair]);
+        }
+        if(characterAvatar.activeRace.name == "HumanFemaleDCS")
+        {
+            characterAvatar.SetSlot(femaleHair[hair]);
+        }
+        characterAvatar.BuildCharacter();
+    }
+
+    public void ChangeSkinColor(int skinColor)
+    {
+        characterAvatar.SetColor("Skin", skinColors[skinColor]);
+        characterAvatar.UpdateColors(true);
     }
 
     void OnCharacterCreated(UMAData data)

@@ -429,7 +429,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 193168482}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500548236}
+        m_MethodName: ChangeSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &193168482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,7 +1148,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 411860904}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500548236}
+        m_MethodName: ChangeSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &411860904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,7 +1463,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 539125290}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500548236}
+        m_MethodName: ChangeHair
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &539125290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1559,7 +1592,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 575713045}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500548236}
+        m_MethodName: ChangeSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &575713045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1850,7 +1894,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 649582034}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500548236}
+        m_MethodName: ChangeSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &649582034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1968,7 +2023,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 697605333}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500548236}
+        m_MethodName: ChangeHair
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &697605333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3554,6 +3620,19 @@ MonoBehaviour:
   heightSlider: {fileID: 890079954}
   muscleSlider: {fileID: 1688009115}
   weightSlider: {fileID: 268418444}
+  maleHair:
+  - {fileID: 11400000, guid: 4acc51a73e0e5884eb7e770d8f803e81, type: 2}
+  - {fileID: 11400000, guid: bc2ac8c776a97fa46a5a1a9455599f2c, type: 2}
+  - {fileID: 11400000, guid: cbac10d2bc6792c43b0d89e71534cf77, type: 2}
+  femaleHair:
+  - {fileID: 11400000, guid: 53a236a7ccb00374dbbed2f13dc8509d, type: 2}
+  - {fileID: 11400000, guid: 967f84b71a1548d4580a76c279ec5389, type: 2}
+  - {fileID: 11400000, guid: bdae23dff0f3d3648882f2f087840fef, type: 2}
+  skinColors:
+  - {r: 0.9433962, g: 0.10234961, b: 0.25998247, a: 0.8156863}
+  - {r: 0.4213315, g: 0.9622642, b: 0.086240634, a: 1}
+  - {r: 0.91934085, g: 0.972549, b: 0.04313727, a: 1}
+  - {r: 0.9622642, g: 0.031772893, b: 0.9447769, a: 1}
 --- !u!1 &1572513446
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,7 +3714,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1572513449}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500548236}
+        m_MethodName: ChangeHair
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1572513449
 MonoBehaviour:
   m_ObjectHideFlags: 0
