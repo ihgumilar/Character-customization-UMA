@@ -4,7 +4,7 @@ using UnityEngine;
 using UMA;
 using UMA.CharacterSystem;
 using UnityEngine.UI;
-
+using System;
 
 public class CharacterCreator : MonoBehaviour
 {
@@ -53,6 +53,17 @@ public class CharacterCreator : MonoBehaviour
         }
     }
 
+    public void SaveCharacter()
+    {
+        PlayerPrefs.SetString("CharacterData", characterAvatar.GetCurrentRecipe());
+    }
+
+    public void ChangeSex(int sex)
+    {
+        characterAvatar.ChangeRace(sex == 0 ? "HumanFemaleDCS" : "HumanMaleDCS");
+        characterAvatar.BuildCharacter();
+    }
+
     public void ChangeHair(int hair)
     {
         if(characterAvatar.activeRace.name == "HumanMaleDCS")
@@ -79,7 +90,15 @@ public class CharacterCreator : MonoBehaviour
 
     void OnCharacterUpdated(UMAData data)
     {
+        DNA = characterAvatar.GetDNA();
+        UpdateSliders();
+    }
 
+    void UpdateSliders()
+    {
+        heightSlider.value = DNA["height"].Get();
+        weightSlider.value = DNA["upperWeight"].Get();
+        muscleSlider.value = DNA["upperMuscle"].Get();
     }
 
     void OnHeightChange(float height)
