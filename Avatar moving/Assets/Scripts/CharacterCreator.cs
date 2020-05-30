@@ -20,6 +20,9 @@ public class CharacterCreator : MonoBehaviour
     [SerializeField]
     private Color[] skinColors;
 
+    [SerializeField]
+    private UMAWardrobeRecipe[] maleEyes, femaleEyes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +54,19 @@ public class CharacterCreator : MonoBehaviour
             weightSlider.onValueChanged.RemoveListener(OnWeightChange);
             muscleSlider.onValueChanged.RemoveListener(OnMuscleChange);
         }
+    }
+
+    public void ChangeEyes(int eyes)
+    {
+        if(characterAvatar.activeRace.name == "HumanMaleDCS")
+        {
+            characterAvatar.SetSlot(maleEyes[eyes]);
+        }
+        if(characterAvatar.activeRace.name == "HumanFemaleDCS")
+        {
+            characterAvatar.SetSlot(femaleEyes[eyes]);
+        }
+        characterAvatar.BuildCharacter();
     }
 
     public void SaveCharacter()
